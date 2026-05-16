@@ -6,7 +6,8 @@
     sg_id: sg-0b7b140563e1a1c2a
     zone_id: Z0472149H3YR900V88FM
     domain_name: "daws86.cloud"
-    instance: mongodb
+    instance: 
+    - mongodb
   tasks:
     - name: create ec2 instance
       amazon.aws.ec2_instance:  
