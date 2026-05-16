@@ -8,6 +8,7 @@
     domain_name: "daws86.cloud"
     instance: 
     - mongodb
+    - redis
   tasks:
     - name: create ec2 instance
       amazon.aws.ec2_instance:  
