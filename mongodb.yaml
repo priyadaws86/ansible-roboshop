@@ -4,13 +4,13 @@
   tasks:
     - name: copy mongodb repo
       ansible.builtin.copy:
-      src: mongo.repo
-      dest: /etc/yum.repos.d/mongo.repo
+       src: mongo.repo
+       dest: /etc/yum.repos.d/mongo.repo
 
     - name: install mongodb server
       ansible.builtin.package:
-      name: mongodb.org
-      state:
+       name: mongodb.org
+       state: present
 
     - name: allow remote connections
       ansible.builtin.replace:
