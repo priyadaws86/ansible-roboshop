@@ -8,8 +8,8 @@
        dest: /etc/yum.repos.d/mongo.repo
 
     - name: install mongodb server
-      ansible.builtin.dnf:
-       name: mongodb.org
+      ansible.builtin.package:
+       name: mongodb-org
        state: present
 
     - name: allow remote connections
